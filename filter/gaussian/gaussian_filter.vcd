@@ -1,0 +1,253 @@
+$date
+	Sat Jul 16 17:28:36 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module gaussian_filter_tb $end
+$var wire 8 ! gaussian_o [7:0] $end
+$var wire 1 " done_o $end
+$var reg 1 # clk $end
+$var reg 8 $ d1_i [7:0] $end
+$var reg 8 % d2_i [7:0] $end
+$var reg 8 & d3_i [7:0] $end
+$var reg 1 ' en_i $end
+$var reg 1 ( rst_n $end
+$scope module Ggaussian_FILTER $end
+$var wire 1 # clk $end
+$var wire 8 ) d1_i [7:0] $end
+$var wire 8 * d2_i [7:0] $end
+$var wire 8 + d3_i [7:0] $end
+$var wire 1 ' en_i $end
+$var wire 1 ( rst_n $end
+$var reg 4 , count [3:0] $end
+$var reg 8 - d11 [7:0] $end
+$var reg 8 . d12 [7:0] $end
+$var reg 8 / d13 [7:0] $end
+$var reg 8 0 d21 [7:0] $end
+$var reg 8 1 d22 [7:0] $end
+$var reg 8 2 d23 [7:0] $end
+$var reg 8 3 d31 [7:0] $end
+$var reg 8 4 d32 [7:0] $end
+$var reg 8 5 d33 [7:0] $end
+$var reg 1 " done_o $end
+$var reg 1 6 flow $end
+$var reg 8 7 gaussian_o [7:0] $end
+$var reg 12 8 gs1 [11:0] $end
+$var reg 12 9 gs2 [11:0] $end
+$var reg 12 : gs3 [11:0] $end
+$var reg 12 ; gs_sum [11:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 ;
+b0 :
+b0 9
+b0 8
+b0 7
+06
+b0 5
+b0 4
+b0 3
+b0 2
+b0 1
+b0 0
+b0 /
+b0 .
+b0 -
+b0 ,
+b0 +
+b0 *
+b0 )
+0(
+0'
+b0 &
+b0 %
+b0 $
+1#
+0"
+b0 !
+$end
+#10000
+1(
+0#
+#20000
+1#
+#30000
+b11 &
+b11 +
+b10 %
+b10 *
+b1 $
+b1 )
+1'
+0#
+#40000
+b1 -
+b10 0
+b11 3
+b1 ,
+16
+1#
+#50000
+b110 &
+b110 +
+b101 %
+b101 *
+b100 $
+b100 )
+0'
+0#
+#60000
+b10 ,
+b11 :
+b100 9
+b1 8
+b11 4
+b110 3
+b10 1
+b101 0
+b1 .
+b100 -
+1#
+#70000
+b1001 &
+b1001 +
+b1000 %
+b1000 *
+b111 $
+b111 )
+0#
+#80000
+b1 /
+b100 .
+b111 -
+b10 2
+b101 1
+b1000 0
+b11 5
+b110 4
+b1001 3
+b1100 :
+b10010 9
+b110 8
+b1000 ;
+b11 ,
+1#
+#90000
+0#
+#100000
+b100 ,
+b100100 ;
+b11000 :
+b101000 9
+b10000 8
+b110 5
+b1001 4
+b101 2
+b1000 1
+b100 /
+b111 .
+1#
+#110000
+0#
+#120000
+b111 /
+b1000 2
+b1001 5
+b100001 :
+b111010 9
+b11001 8
+b1010000 ;
+b10 !
+b10 7
+b101 ,
+1#
+#130000
+0#
+#140000
+1"
+b0 ,
+06
+b101 !
+b101 7
+b1110100 ;
+b100100 :
+b1000000 9
+b11100 8
+1#
+#150000
+0#
+#160000
+b10000000 ;
+b111 !
+b111 7
+0"
+1#
+#170000
+0#
+#180000
+b1000 !
+b1000 7
+1#
+#190000
+0#
+#200000
+1#
+#210000
+0#
+#220000
+1#
+#230000
+0#
+#240000
+1#
+#250000
+0#
+#260000
+1#
+#270000
+0#
+#280000
+1#
+#290000
+0#
+#300000
+1#
+#310000
+0#
+#320000
+1#
+#330000
+0#
+#340000
+1#
+#350000
+0#
+#360000
+1#
+#370000
+0#
+#380000
+1#
+#390000
+0#
+#400000
+1#
+#410000
+0#
+#420000
+1#
+#430000
+0#
+#440000
+1#
+#450000
+0#
+#460000
+1#

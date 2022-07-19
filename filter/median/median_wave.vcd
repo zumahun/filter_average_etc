@@ -1,0 +1,533 @@
+$date
+	Fri Jul 15 21:34:58 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module median_filter_tb $end
+$var wire 8 ! median_o [7:0] $end
+$var wire 1 " done_o $end
+$var reg 1 # clk $end
+$var reg 8 $ d1_i [7:0] $end
+$var reg 8 % d2_i [7:0] $end
+$var reg 8 & d3_i [7:0] $end
+$var reg 1 ' en_i $end
+$var reg 1 ( rst_n $end
+$scope module MEDIAN_FILTER $end
+$var wire 1 # clk $end
+$var wire 8 ) d1_i [7:0] $end
+$var wire 8 * d2_i [7:0] $end
+$var wire 8 + d3_i [7:0] $end
+$var wire 1 ' en_i $end
+$var wire 1 ( rst_n $end
+$var wire 8 , min_of_max [7:0] $end
+$var wire 8 - min3 [7:0] $end
+$var wire 8 . min2 [7:0] $end
+$var wire 8 / min1 [7:0] $end
+$var wire 8 0 median_o [7:0] $end
+$var wire 8 1 med_of_med [7:0] $end
+$var wire 8 2 med3 [7:0] $end
+$var wire 8 3 med2 [7:0] $end
+$var wire 8 4 med1 [7:0] $end
+$var wire 8 5 max_of_min [7:0] $end
+$var wire 8 6 max3 [7:0] $end
+$var wire 8 7 max2 [7:0] $end
+$var wire 8 8 max1 [7:0] $end
+$var reg 4 9 count [3:0] $end
+$var reg 8 : d11 [7:0] $end
+$var reg 8 ; d12 [7:0] $end
+$var reg 8 < d13 [7:0] $end
+$var reg 8 = d21 [7:0] $end
+$var reg 8 > d22 [7:0] $end
+$var reg 8 ? d23 [7:0] $end
+$var reg 8 @ d31 [7:0] $end
+$var reg 8 A d32 [7:0] $end
+$var reg 8 B d33 [7:0] $end
+$var reg 1 " done_o $end
+$var reg 1 C flow $end
+$scope module SORT_FINAL_DATA $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 8 D d3_i [7:0] $end
+$var wire 8 E d2_i [7:0] $end
+$var wire 8 F d1_i [7:0] $end
+$var reg 8 G max_o [7:0] $end
+$var reg 8 H med_o [7:0] $end
+$var reg 8 I min_o [7:0] $end
+$upscope $end
+$scope module SORT_LINE1_DATA $end
+$var wire 1 # clk $end
+$var wire 8 J d1_i [7:0] $end
+$var wire 8 K d2_i [7:0] $end
+$var wire 8 L d3_i [7:0] $end
+$var wire 1 ( rst_n $end
+$var reg 8 M max_o [7:0] $end
+$var reg 8 N med_o [7:0] $end
+$var reg 8 O min_o [7:0] $end
+$upscope $end
+$scope module SORT_LINE2_DATA $end
+$var wire 1 # clk $end
+$var wire 8 P d1_i [7:0] $end
+$var wire 8 Q d2_i [7:0] $end
+$var wire 8 R d3_i [7:0] $end
+$var wire 1 ( rst_n $end
+$var reg 8 S max_o [7:0] $end
+$var reg 8 T med_o [7:0] $end
+$var reg 8 U min_o [7:0] $end
+$upscope $end
+$scope module SORT_LINE3_DATA $end
+$var wire 1 # clk $end
+$var wire 8 V d1_i [7:0] $end
+$var wire 8 W d2_i [7:0] $end
+$var wire 8 X d3_i [7:0] $end
+$var wire 1 ( rst_n $end
+$var reg 8 Y max_o [7:0] $end
+$var reg 8 Z med_o [7:0] $end
+$var reg 8 [ min_o [7:0] $end
+$upscope $end
+$scope module SORT_MAX_DATA $end
+$var wire 1 # clk $end
+$var wire 8 \ d1_i [7:0] $end
+$var wire 8 ] d2_i [7:0] $end
+$var wire 8 ^ d3_i [7:0] $end
+$var wire 1 ( rst_n $end
+$var reg 8 _ max_o [7:0] $end
+$var reg 8 ` med_o [7:0] $end
+$var reg 8 a min_o [7:0] $end
+$upscope $end
+$scope module SORT_MED_DATA $end
+$var wire 1 # clk $end
+$var wire 8 b d1_i [7:0] $end
+$var wire 8 c d2_i [7:0] $end
+$var wire 8 d d3_i [7:0] $end
+$var wire 1 ( rst_n $end
+$var reg 8 e max_o [7:0] $end
+$var reg 8 f med_o [7:0] $end
+$var reg 8 g min_o [7:0] $end
+$upscope $end
+$scope module SORT_MIN_DATA $end
+$var wire 1 # clk $end
+$var wire 8 h d1_i [7:0] $end
+$var wire 8 i d2_i [7:0] $end
+$var wire 8 j d3_i [7:0] $end
+$var wire 1 ( rst_n $end
+$var reg 8 k max_o [7:0] $end
+$var reg 8 l med_o [7:0] $end
+$var reg 8 m min_o [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 m
+b0 l
+b0 k
+b0 j
+b0 i
+b0 h
+b0 g
+b0 f
+b0 e
+b0 d
+b0 c
+b0 b
+b0 a
+b0 `
+b0 _
+b0 ^
+b0 ]
+b0 \
+b0 [
+b0 Z
+b0 Y
+b0 X
+b0 W
+b0 V
+b0 U
+b0 T
+b0 S
+b0 R
+b0 Q
+b0 P
+b0 O
+b0 N
+b0 M
+b0 L
+b0 K
+b0 J
+b0 I
+b0 H
+b0 G
+b0 F
+b0 E
+b0 D
+0C
+b0 B
+b0 A
+b0 @
+b0 ?
+b0 >
+b0 =
+b0 <
+b0 ;
+b0 :
+b0 9
+b0 8
+b0 7
+b0 6
+b0 5
+b0 4
+b0 3
+b0 2
+b0 1
+b0 0
+b0 /
+b0 .
+b0 -
+b0 ,
+b0 +
+b0 *
+b0 )
+0(
+0'
+b0 &
+b0 %
+b0 $
+1#
+0"
+b0 !
+$end
+#10000
+0#
+#20000
+1(
+1#
+#30000
+0#
+#40000
+1#
+#42000
+b11 &
+b11 +
+b10 %
+b10 *
+b1 $
+b1 )
+1'
+#50000
+0#
+#60000
+b1 9
+1C
+b11 @
+b11 V
+b10 =
+b10 P
+b1 :
+b1 J
+1#
+#62000
+b110 &
+b110 +
+b101 %
+b101 *
+b100 $
+b100 )
+0'
+#70000
+0#
+#80000
+b1 8
+b1 M
+b1 \
+b10 7
+b10 S
+b10 ]
+b11 6
+b11 Y
+b11 ^
+b1 ;
+b1 K
+b100 :
+b100 J
+b10 >
+b10 Q
+b101 =
+b101 P
+b11 A
+b11 W
+b110 @
+b110 V
+b10 9
+1#
+#82000
+b1001 &
+b1001 +
+b1000 %
+b1000 *
+b111 $
+b111 )
+#90000
+0#
+#100000
+b11 9
+b11 B
+b11 X
+b110 A
+b110 W
+b1001 @
+b1001 V
+b10 ?
+b10 R
+b101 >
+b101 Q
+b1000 =
+b1000 P
+b1 <
+b1 L
+b100 ;
+b100 K
+b111 :
+b111 J
+b1 ,
+b1 F
+b1 a
+b10 `
+b11 _
+b11 2
+b11 Z
+b11 d
+b110 6
+b110 Y
+b110 ^
+b10 3
+b10 T
+b10 c
+b101 7
+b101 S
+b101 ]
+b1 4
+b1 N
+b1 b
+b100 8
+b100 M
+b100 \
+1#
+#110000
+0#
+#120000
+b111 8
+b111 M
+b111 \
+b100 4
+b100 N
+b100 b
+b1 /
+b1 O
+b1 h
+b1000 7
+b1000 S
+b1000 ]
+b101 3
+b101 T
+b101 c
+b10 .
+b10 U
+b10 i
+b1001 6
+b1001 Y
+b1001 ^
+b110 2
+b110 Z
+b110 d
+b11 -
+b11 [
+b11 j
+b110 _
+b101 `
+b100 ,
+b100 F
+b100 a
+b11 e
+b10 1
+b10 E
+b10 f
+b1 g
+b1 G
+b100 <
+b100 L
+b111 ;
+b111 K
+b101 ?
+b101 R
+b1000 >
+b1000 Q
+b110 B
+b110 X
+b1001 A
+b1001 W
+b100 9
+1#
+#130000
+0#
+#140000
+b101 9
+b1001 B
+b1001 X
+b1000 ?
+b1000 R
+b111 <
+b111 L
+b10 !
+b10 0
+b10 H
+b100 G
+b1 m
+b10 l
+b11 5
+b11 D
+b11 k
+b100 g
+b101 1
+b101 E
+b101 f
+b110 e
+b111 ,
+b111 F
+b111 a
+b1000 `
+b1001 _
+b110 -
+b110 [
+b110 j
+b1001 2
+b1001 Z
+b1001 d
+b101 .
+b101 U
+b101 i
+b1000 3
+b1000 T
+b1000 c
+b100 /
+b100 O
+b100 h
+b111 4
+b111 N
+b111 b
+1#
+#150000
+0#
+#160000
+b111 /
+b111 O
+b111 h
+b1000 .
+b1000 U
+b1000 i
+b1001 -
+b1001 [
+b1001 j
+b1001 e
+b1000 1
+b1000 E
+b1000 f
+b111 g
+b110 5
+b110 D
+b110 k
+b101 l
+b100 m
+b111 G
+b101 !
+b101 0
+b101 H
+b11 I
+1"
+b0 9
+0C
+1#
+#170000
+0#
+#180000
+0"
+b110 I
+b111 !
+b111 0
+b111 H
+b1000 G
+b111 m
+b1000 l
+b1001 5
+b1001 D
+b1001 k
+1#
+#190000
+0#
+#200000
+b1001 G
+b1000 !
+b1000 0
+b1000 H
+b111 I
+1#
+#210000
+0#
+#220000
+1#
+#230000
+0#
+#240000
+1#
+#250000
+0#
+#260000
+1#
+#270000
+0#
+#280000
+1#
+#290000
+0#
+#300000
+1#
+#310000
+0#
+#320000
+1#
+#330000
+0#
+#340000
+1#
+#350000
+0#
+#360000
+1#
+#370000
+0#
+#380000
+1#
+#390000
+0#
+#400000
+1#
+#410000
+0#
+#420000
+1#
+#430000
+0#
+#440000
+1#
+#450000
+0#
+#460000
+1#
+#470000
+0#
+#480000
+1#
